@@ -1,0 +1,641 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(10, 10, 30, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+
+.inner_header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 48px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo p {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+.menu_link a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #e10600;
+  transition: 0.3s ease;
+}
+
+.menu_link a:hover::after {
+  width: 100%;
+}
+.btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 20px;
+  background: #e10600;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff1f1f;
+  transform: translateY(-2px);
+}
+
+.news {
+  padding: 100px 0;
+  background: radial-gradient(circle at top, #0b1c3d, #050b1c);
+}
+
+.news h2 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.inner_news {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.inner_news .card_news {
+  width: 100%;
+  max-width: 380px;
+  height: 80%;
+  background: linear-gradient(180deg, #0e1f3f, #08152c);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: 0.4s ease;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.inner_news .card_news img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.inner_news .card_news p {
+  padding: 24px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Hover эффекты */
+.inner_news .card_news:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(225, 6, 0, 0.4);
+}
+
+
+/* Контейнер карточек */
+.inner_news {
+  gap: 40px;
+}
+
+
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("https://www.fcbarcelona.com/photo-resources/2025/12/17/1007cdb8-a3c8-45eb-ae3a-d615058c47a3/7.-Bar-a-3-2-Real-Madrid-26-4-Germ-n-Parga.jpg?width=2400&height=1500");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.1)
+  );
+}
+.hero__content {
+  position: relative;
+  max-width: 700px;
+  padding: 60px;
+  color: #fff;
+}
+
+.hero__content h1 {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.hero__content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+.hero__btn {
+  display: inline-block;
+  padding: 7px 19px;
+  background: #e10600;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.hero__btn:hover {
+  background: #ff1f1f;
+  transform: translateY(-2px);
+}
+
+
+
+
+
+.header-img {
+  position: relative;
+  width: 100%;
+  height: 120vh; /* лучше чем 900px */
+  background-image: url("https://www.fcbarcelona.com/photo-resources/2025/12/17/1007cdb8-a3c8-45eb-ae3a-d615058c47a3/7.-Bar-a-3-2-Real-Madrid-26-4-Germ-n-Parga.jpg?width=2400&height=1500");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.header-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.header-img h3 {
+  position: relative;
+  max-width: 900px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.7);
+}
+
+.header-img h3 {
+  animation: fadeUp 1s ease-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.slider_block {
+    padding: 100px 0;
+      background: radial-gradient(circle at top, #1a1a3a, #0b0b1e);
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border: 3px solid var(--orange);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.slide {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide_card {
+    color: white;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
+.slide_card img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide_card h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.slide_card p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.slide_card a {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.slide.active_slide {
+    display: block;
+}
+
+.btn-slide {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: var(--orange);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    font-weight: 800;
+    z-index: 1;
+}
+
+.btn-slide:hover {
+    background: #951616 !important;
+    cursor: pointer;
+    color: white;
+}
+
+.trophies {
+  background: radial-gradient(circle at top, #1a1a3a, #0b0b1e);
+  padding: 60px 0;
+}
+
+.trophies__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.trophy-card {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    #111,
+    #1b1b1b
+  );
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.trophy-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 8px,
+    rgba(220,0,0,0.3) 10px
+  );
+  opacity: 0.6;
+}
+
+.trophy-icon {
+  position: relative;
+  font-size: 40px;
+  color: gold;
+}
+
+.trophy-info {
+  position: relative;
+}
+
+.trophy-title {
+  display: block;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.trophy-count {
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffd700;
+  line-height: 1;
+}
+
+.trophy-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+.trophy-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+.trophy-svg {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.6));
+}
+
+
+
+.footer {
+  background: radial-gradient( #1a1a3a, #0b0b1e);
+  padding: 60px 0;
+}
+
+.sponsors-title {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+
+.sponsors-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.footer-sponsors__sponsor {
+  width: 160px;
+  height: 60px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+.sponsor-nike {
+  background-image: url("https://fcbarcelona-static-files.s3.amazonaws.com/sponsors/nike--white.svg");
+}
+
+.sponsor-spotify {
+  background-image: url("https://fcbarcelona-static-files.s3.amazonaws.com/sponsors/spotify--white.svg");
+}
+
+.sponsor-ambilight {
+  background-image: url("https://fcbarcelona-static-files.s3.amazonaws.com/sponsors/ambilight--white.svg");
+}
+
+.footer-sponsors__sponsor:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+.footer-sponsors__sponsor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background-color: #e10600;
+  transition: width 0.3s ease;
+}
+
+.footer-sponsors__sponsor:hover::after {
+  width: 100%;
+}
+.social-media {
+  margin-top: 80px;
+  padding: 40px 0;
+  text-align: center;
+}
+.social-media p {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  opacity: 0.7;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.social-accaount {
+  width: 150px;
+  height: 44px;
+}
+.social-accaount a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.social-accaount img {
+  width: 40px;
+  height: 40px;
+}
+.social-accaount a:hover {
+  opacity: 1;
+  transform: scale(1.18);
+  
+}
+.social-accaount a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #e10600;
+  transition: width 0.3s ease;
+  
+}
+
+.social-accaount a:hover::after {
+  width: 100%;
+}
+
+
+
+
+/* Модалка */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* Контент модалки */
+.modal-content {
+  background-color: #0a1a3a;
+  color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+/* Закрыть модалку */
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Соцсети */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links img {
+  width: 32px;
+  filter: invert(1); /* белые иконки на темном фоне */
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+.barca-video {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #7a0019, #001f5b);
+}
+
+.video-title {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.youtube-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+.youtube-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

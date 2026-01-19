@@ -1,0 +1,134 @@
+{
+  "goalkeepers": [
+    {
+      "id": 1,
+      "firstName": "Marc-André",
+      "lastName": "Ter Stegen",
+      "position": "Goalkeeper",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/09/1b765077-cfc5-4e66-8169-4e45f6ec7392/01-Ter_Stegen.jpg?width=1200&height=750",
+      "appearances": 423,
+      "cleanSheets": 175,
+      "saves": 989
+    },
+    {
+      "id": 2,
+      "firstName": "Joan",
+      "lastName": "Garcia",
+      "position": "Goalkeeper",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/09/2b12f57a-582e-408a-b23e-ec9c42b0d5b9/01-Joan_Garcia.jpg?width=1200&height=750",
+      "appearances": 18,
+      "cleanSheets": 8,
+      "saves": 54
+    },
+    {
+      "id": 3,
+      "firstName": "Wojciech",
+      "lastName": "Szczęsny",
+      "position": "Goalkeeper",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/09/01ac5137-9725-4e97-858e-711344d43fb5/25-Szczesny.jpg?width=1200&height=750",
+        "appearances": 39,
+        "cleanSheets": 13,
+        "saves": 88
+      
+    }
+  ],
+
+  "defenders": [
+    {
+      "id": 4,
+      "firstName": "Ronald",
+      "lastName": "Araújo",
+      "position": "Defender",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/09/46af26e5-df57-406a-9bb1-b6f037631f0f/04-Araujo.jpg?width=1200&height=750",
+      "appearances": 31,
+      "goals": 2,
+      "assists": 1
+    },
+    {
+      "id": 5,
+      "firstName": "Jules",
+      "lastName": "Koundé",
+      "position": "Defender",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/09/e25e8ccc-4b69-48ef-8c48-2eebbcc74770/23-Kounde.jpg?width=1200&height=750",
+      "appearances": 34,
+      "goals": 1,
+      "assists": 3
+    },
+    {
+      "id": 6,
+      "firstName": "Alejandro",
+      "lastName": "Balde",
+      "position": "Defender",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/09/82dfc9f5-ffc4-4b47-a828-21de924f9b5f/03-Balde.jpg?width=1200&height=750",
+      "appearances": 29,
+      "goals": 0,
+      "assists": 4
+    }
+  ],
+
+  "midfielders": [
+    {
+      "id": 7,
+      "firstName": "Frenkie",
+      "lastName": "de Jong",
+      "position": "Midfielder",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/09/21356702-1d94-49a8-a94a-4170afe7ca16/06-Gavi.jpg?width=1200&height=750",
+      "appearances": 32,
+      "goals": 4,
+      "assists": 6
+    },
+    {
+      "id": 8,
+      "firstName": "Pedri",
+      "lastName": "González",
+      "position": "Midfielder",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/10/597a1e13-c0b2-4c93-a2fd-4cc39a9459cc/08-Pedri.jpg?width=1200&height=750",
+      "appearances": 28,
+      "goals": 3,
+      "assists": 5
+    },
+    {
+      "id": 9,
+      "firstName": "Gavi",
+      "lastName": "Páez",
+      "position": "Midfielder",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/09/21356702-1d94-49a8-a94a-4170afe7ca16/06-Gavi.jpg?width=1200&height=750",
+      "appearances": 26,
+      "goals": 2,
+      "assists": 4
+    }
+  ],
+
+  "forwards": [
+    {
+      "id": 10,
+      "firstName": "Robert",
+      "lastName": "Lewandowski",
+      "position": "Forward",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/10/6dd5aa47-d5fb-45a5-b171-0da82c9c7105/09-Lewandowski.jpg?width=1200&height=750",
+      "appearances": 35,
+      "goals": 21,
+      "assists": 7
+    },
+    {
+      "id": 11,
+      "firstName": "Raphinha",
+      "lastName": "Dias",
+      "position": "Forward",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/10/08bbb1ff-004b-4623-a675-66fd1fbfdc8b/11-Raphinha.jpg?width=1200&height=750",
+      "appearances": 33,
+      "goals": 9,
+      "assists": 8
+    },
+    {
+      "id": 12,
+      "firstName": "Lamine",
+      "lastName": "Yamal",
+      "position": "Forward",
+      "image": "https://www.fcbarcelona.com/photo-resources/2025/09/09/a9ecee2c-116c-405c-8524-3127913e7a3c/10-Lamine.jpg?width=1200&height=750",
+      "appearances": 25,
+      "goals": 6,
+      "assists": 5
+    }
+  ]
+}

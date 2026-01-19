@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/lessons.css">
+    <link rel="stylesheet" href="../css/home-work.css">
+</head>
+<body>
+    <header class="header">
+      <div class="inner_header">
+        <a href="../index.html" class="logo">
+          <img src="https://free-png.ru/wp-content/uploads/2020/10/s1200-7ef450ee.png" alt="FC Barcelona">
+          <p>FC BARCELONA</p>
+        </a>
+
+        <ul class="menu">
+          <li class="menu_link"><a href="/pages/home-work.html">Home Works</a></li>
+          <li class="menu_link"><a href="/pages/lessons.html">Lessons</a></li>
+          <li class="menu_link">
+            <a href="https://t.me/baked_toastt" target="_blank">Send message</a>
+          </li>
+        </ul>
+
+        <button class="btn" id="openModal">Click me!</button>
+      </div>
+    </header>
+
+    <div class="gmail_block">
+        <div class="container">
+            <div class="inner_gmail_block">
+                <div class="form_gmail">
+                    <label for="gmail_input" style="color: #fff;">Phone number</label>
+                    <input type="text" id="gmail_input" placeholder="+996 XXX XX-XX-XX">
+                    <button class="btn" id="gmail_button">Check phone</button>
+                    <span class="checker" id="gmail_result"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="team">
+        <div class="container">
+            <h2 class="team-title">FC BARCELONA SQUAD</h2>
+
+            <div id="team-groups">
+            
+            </div>
+        </div>
+    </section>
+
+  <section class="guess-player">
+    <div class="container">
+      <h2 class="game-title">Guess the Player</h2>
+
+      <div class="game-card">
+        <img id="playerImage" src="" alt="Player">
+        
+        <div class="answers" id="answers"></div>
+
+        <p class="game-result" id="gameResult"></p>
+        <button class="btn" id="nextBtn">Next Player</button>
+      </div>
+    </div>
+  </section>
+
+
+
+    <section class="trophies">
+  <div class="trophies__container">
+
+    <div class="trophy-card">
+      <div class="trophy-icon">
+  <svg viewBox="0 0 64 64" class="trophy-svg">
+    <defs>
+      <linearGradient id="goldGradient" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ffd700"/>
+        <stop offset="100%" stop-color="#ffb700"/>
+      </linearGradient>
+    </defs>
+
+    <path fill="url(#goldGradient)"
+      d="M16 8h32v8c0 8.8-7.2 16-16 16S16 24.8 16 16V8z"/>
+    <path fill="url(#goldGradient)" d="M8 8h8v8c0 4.4-3.6 8-8 8V8z"/>
+    <path fill="url(#goldGradient)" d="M48 8h8v16c-4.4 0-8-3.6-8-8V8z"/>
+    <rect fill="url(#goldGradient)" x="28" y="32" width="8" height="10"/>
+    <rect fill="url(#goldGradient)" x="20" y="42" width="24" height="6"/>
+  </svg>
+</div>
+
+      <div class="trophy-info">
+        <span class="trophy-title">La Liga</span>
+        <span class="trophy-count">28</span>
+        <span class="trophy-label">TITLES</span>
+      </div>
+    </div>
+
+    <div class="trophy-card">
+      <div class="trophy-icon">
+  <svg viewBox="0 0 64 64" class="trophy-svg">
+    <defs>
+      <linearGradient id="goldGradient" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ffd700"/>
+        <stop offset="100%" stop-color="#ffb700"/>
+      </linearGradient>
+    </defs>
+
+    <path fill="url(#goldGradient)"
+      d="M16 8h32v8c0 8.8-7.2 16-16 16S16 24.8 16 16V8z"/>
+    <path fill="url(#goldGradient)" d="M8 8h8v8c0 4.4-3.6 8-8 8V8z"/>
+    <path fill="url(#goldGradient)" d="M48 8h8v16c-4.4 0-8-3.6-8-8V8z"/>
+    <rect fill="url(#goldGradient)" x="28" y="32" width="8" height="10"/>
+    <rect fill="url(#goldGradient)" x="20" y="42" width="24" height="6"/>
+  </svg>
+</div>
+
+      <div class="trophy-info">
+        <span class="trophy-title">UEFA Champions League</span>
+        <span class="trophy-count">5</span>
+        <span class="trophy-label">TROPHIES</span>
+      </div>
+    </div>
+
+    <div class="trophy-card">
+      <div class="trophy-icon">
+        <svg viewBox="0 0 64 64" class="trophy-svg">
+            <defs>
+            <linearGradient id="goldGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ffd700"/>
+                <stop offset="100%" stop-color="#ffb700"/>
+            </linearGradient>
+            </defs>
+
+            <path fill="url(#goldGradient)"
+            d="M16 8h32v8c0 8.8-7.2 16-16 16S16 24.8 16 16V8z"/>
+            <path fill="url(#goldGradient)" d="M8 8h8v8c0 4.4-3.6 8-8 8V8z"/>
+            <path fill="url(#goldGradient)" d="M48 8h8v16c-4.4 0-8-3.6-8-8V8z"/>
+            <rect fill="url(#goldGradient)" x="28" y="32" width="8" height="10"/>
+            <rect fill="url(#goldGradient)" x="20" y="42" width="24" height="6"/>
+        </svg>
+      </div>
+
+      <div class="trophy-info">
+        <span class="trophy-title">FIFA Club World Cup</span>
+        <span class="trophy-count">3</span>
+        <span class="trophy-label">TROPHIES</span>
+      </div>
+    </div>
+
+    <div class="trophy-card">
+      <div class="trophy-icon">
+        <svg viewBox="0 0 64 64" class="trophy-svg">
+            <defs>
+            <linearGradient id="goldGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ffd700"/>
+                <stop offset="100%" stop-color="#ffb700"/>
+            </linearGradient>
+            </defs>
+
+            <path fill="url(#goldGradient)"
+            d="M16 8h32v8c0 8.8-7.2 16-16 16S16 24.8 16 16V8z"/>
+            <path fill="url(#goldGradient)" d="M8 8h8v8c0 4.4-3.6 8-8 8V8z"/>
+            <path fill="url(#goldGradient)" d="M48 8h8v16c-4.4 0-8-3.6-8-8V8z"/>
+            <rect fill="url(#goldGradient)" x="28" y="32" width="8" height="10"/>
+            <rect fill="url(#goldGradient)" x="20" y="42" width="24" height="6"/>
+        </svg>
+      </div>
+      <div class="trophy-info">
+        <span class="trophy-title">Copa Del Rey</span>
+        <span class="trophy-count">32</span>
+        <span class="trophy-label">TROPHIES</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div class="footer">
+    <div class="footer-sponsors">
+    <p class="sponsors-title">Main Partners</p>
+
+    <div class="sponsors-container">
+      <a href="https://www.nike.com" target="_blank"
+         class="footer-sponsors__sponsor sponsor-nike" aria-label="Nike"></a>
+
+      <a href="https://open.spotify.com" target="_blank"
+         class="footer-sponsors__sponsor sponsor-spotify" aria-label="Spotify"></a>
+
+      <a href="https://www.philips.com/ambilight" target="_blank"
+         class="footer-sponsors__sponsor sponsor-ambilight" aria-label="Ambilight"></a>
+    </div>
+  </div>
+
+  <div class="social-media">
+    <p>Follow FC Barcelona on social media</p>
+    <div class="social-container">
+        <ul class="social-list">
+            <li class="social-accaount"><a href="https://es-es.facebook.com/fcbarcelona/" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/facebook-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://x.com/FCBarcelona" target="_blank">
+                <img src="	https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/x-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://www.youtube.com/user/fcbarcelona" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/youtube-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://www.instagram.com/fcbarcelona/" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/instagram-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://open.spotify.com/user/31gorrj76f2m3wczoifm6f6tbn3q?si=a20bf0c076684729&nd=1" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/spotify-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://discord.com/invite/fcbarcelonaofficial" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/discord-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://www.tiktok.com/@fcbarcelona" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/tiktok-sm.png" alt="">
+            </a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<div id="barcaModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>FC Barcelona</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barcelona Logo" class="modal-logo">
+    <p>
+      FC Barcelona is a professional football club based in Barcelona, Catalonia, Spain. 
+      Founded in 1899, it is one of the most successful football clubs in the world.
+    </p>
+    
+    <!-- Соцсети -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/fcbarcelona" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com/FCBarcelona" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://www.instagram.com/fcbarcelona/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+<script src="../js/lessons.js"></script>
+<script src="../js/modal.js"></script>
+</html>

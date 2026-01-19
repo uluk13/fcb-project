@@ -1,0 +1,187 @@
+
+/* Секция команды */
+.team {
+  padding: 80px 20px;
+  background: radial-gradient( #1a1a3a, #0b0b1e);
+}
+
+.team-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+.position-title {
+  font-size: 28px;
+  margin: 40px 0 20px;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+/* Сетка карточек внутри группы */
+.players-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Карточки игроков */
+.player-card {
+  position: relative;
+  width: 260px;
+  height: 360px;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #0a1a3a;
+  transition: transform 0.4s, box-shadow 0.4s, opacity 0.4s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.player-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.player-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.15));
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.player-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  transition: 0.4s ease;
+  z-index: 2;
+}
+
+
+
+.position {
+  font-size: 14px;
+  opacity: 0.7;
+  margin: 5px 0 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats strong {
+  font-size: 18px;
+  display: block;
+}
+
+.stats span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.player-card:hover::after {
+  opacity: 1;
+}
+
+.player-card:hover .player-overlay {
+  bottom: 0;
+}
+
+.player-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+}
+
+
+
+.guess-player {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #7a0019, #001f5b);
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.game-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.game-card {
+  max-width: 400px;
+  margin: auto;
+  background: #0a1a3a;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.game-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.answers button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #001f5b;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.answers button:hover {
+  background: #e10600;
+  color: #fff;
+}
+
+.game-result {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#nextBtn {
+  display: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #e10600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#nextBtn:hover {
+  background: #ff3b3b;
+}

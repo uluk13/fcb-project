@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home-work.css">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="inner_header">
+            <a href="../index.html" class="logo">
+            <img src="https://free-png.ru/wp-content/uploads/2020/10/s1200-7ef450ee.png" alt="FC Barcelona">
+            <p>FC BARCELONA</p>
+            </a>
+
+            <ul class="menu">
+            <li class="menu_link"><a href="/pages/home-work.html">Home Works</a></li>
+            <li class="menu_link"><a href="/pages/lessons.html">Lessons</a></li>
+            <li class="menu_link">
+                <a href="https://t.me/baked_toastt" target="_blank">Send message</a>
+            </li>
+            </ul>
+
+            <button class="btn" id="openModal">Click me!</button>
+        </div>
+    </header>
+
+    <div class="gmail_block">
+        <div class="container">
+            <div class="inner_gmail_block">
+                <div class="form_gmail">
+                    <label for="gmail_input"></label>
+                    <input type="text" id="gmail_input" placeholder="your gmail">
+                    <button class="btn" id="gmail_button">Check gmail</button>
+                    <span class="checker" id="gmail_result"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="move_block">
+        <div class="container">
+            <h3>Homework 1 (part 2)</h3>
+            <div class="inner_move_block">
+                <div class="parent_block">
+                    <div class="child_block"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stopwatch">
+        <div class="container">
+            <h3>Homework 2 </h3>
+            <div class="time">
+                <div class="time_block">
+                    <div class="interval" id="seconds">0</div>
+                </div>
+            </div>
+            <div class="time_buttons">
+                <button class="btn" id="start">Start</button>
+                <button class="btn" id="stop">Stop</button>
+                <button class="btn" id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="converter">
+        <div class="container">
+            <h3>CONVERTER</h3>
+            <div class="inner_converter">
+                <div class="som">
+                    <label for="som">Som</label>
+                    <input type="number" id="som">
+                </div>
+                <div class="usd">
+                    <label for="usd">Usd</label>
+                    <input type="number" id="usd">
+                </div>
+                <div class="eur">
+                    <label for="eur">Eur</label>
+                    <input type="number" id="eur">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-sponsors">
+        <p class="sponsors-title">Main Partners</p>
+
+            <div class="sponsors-container">
+                <a href="https://www.nike.com" target="_blank"
+                    class="footer-sponsors__sponsor sponsor-nike" aria-label="Nike"></a>
+
+                <a href="https://open.spotify.com" target="_blank"
+                    class="footer-sponsors__sponsor sponsor-spotify" aria-label="Spotify"></a>
+
+                <a href="https://www.philips.com/ambilight" target="_blank"
+                    class="footer-sponsors__sponsor sponsor-ambilight" aria-label="Ambilight"></a>
+            </div>
+        </div>
+
+  <div class="social-media">
+    <p>Follow FC Barcelona on social media</p>
+    <div class="social-container">
+        <ul class="social-list">
+            <li class="social-accaount"><a href="https://es-es.facebook.com/fcbarcelona/" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/facebook-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://x.com/FCBarcelona" target="_blank">
+                <img src="	https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/x-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://www.youtube.com/user/fcbarcelona" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/youtube-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://www.instagram.com/fcbarcelona/" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/instagram-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://open.spotify.com/user/31gorrj76f2m3wczoifm6f6tbn3q?si=a20bf0c076684729&nd=1" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/spotify-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://discord.com/invite/fcbarcelonaofficial" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/discord-sm.png" alt="">
+            </a></li>
+            <li class="social-accaount"><a href="https://www.tiktok.com/@fcbarcelona" target="_blank">
+                <img src="https://www.fcbarcelona.com/resources/v3.3.2-7537/i/icons/tiktok-sm.png" alt="">
+            </a></li>
+        </ul>
+    </div>
+  </div>
+</div> 
+<div id="barcaModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>FC Barcelona</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barcelona Logo" class="modal-logo">
+    <p>
+      FC Barcelona is a professional football club based in Barcelona, Catalonia, Spain. 
+      Founded in 1899, it is one of the most successful football clubs in the world.
+    </p>
+    
+    <!-- Соцсети -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/fcbarcelona" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com/FCBarcelona" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://www.instagram.com/fcbarcelona/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+<script src="../js/home-work.js"></script>
+<script src="../js/modal.js"></script>
+</html>

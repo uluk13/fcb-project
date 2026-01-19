@@ -1,0 +1,170 @@
+.gmail_block {
+    background: linear-gradient(180deg, #0b0b0b, #111);
+    padding: 100px 0;
+}
+
+.inner_gmail_block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e10600;
+    height: 300px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.form_gmail {
+ background: #0f0f0f;
+  padding: 32px 40px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+#gmail_input {
+  width: 280px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+  background: #121212;
+  color: #fff;
+  font-size: 15px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+#gmail_input:focus {
+  outline: none;
+  border-color: #e10600;
+  box-shadow: 0 0 0 3px rgba(225, 6, 0, 0.25);
+}
+
+#gmail_button {
+  padding: 14px 26px;
+  border-radius: 10px;
+  border: none;
+  background: #e10600;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#gmail_button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(225, 6, 0, 0.4);
+}
+
+.move_block {
+    background: radial-gradient(circle at top, #0b1c3d, #050b1c);
+    padding: 100px 0;
+}
+
+.inner_parent_block {
+    height: 400px;
+    width: 400px;
+    border: 1px solid var(--orange);
+    border-radius: 18px;
+}
+
+.parent_block {
+    height: 500px;
+    width: 500px;
+    border: 1px solid red;
+    position: relative;
+    margin: 0 auto;
+}
+
+.child_block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url(https://free-png.ru/wp-content/uploads/2020/10/s1200-7ef450ee.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+
+}
+
+.inner_move_block {
+    margin-top: 50px;
+}
+
+
+
+
+.time {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid red;
+    margin-top: 40px;
+}
+
+.time_block {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+}
+
+.stopwatch {
+    padding: 100px 0;
+    background: radial-gradient( #1a1a3a, #0b0b1e);
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+}
+.stopwatch .container {
+    padding: 20px;
+}
+
+.time_buttons {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.converter {
+    padding: 100px 0;
+    background: radial-gradient( #1a1a3a, #0b0b1e);
+    
+}
+
+.inner_converter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    color: white;
+    border: 1px solid red;
+}
+
+.inner_converter > div {
+    display: flex;
+    flex-direction: column;
+} 
+
+.inner_converter input {
+    width: 280px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+  background: #121212;
+  color: #fff;
+  font-size: 15px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inner_converter input:hover {
+     transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(225, 6, 0, 0.4);
+}
